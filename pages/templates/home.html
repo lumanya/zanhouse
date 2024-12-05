@@ -1,0 +1,264 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<section class="wrapper bg-soft-primary">
+    <div class="container pt-18 pb-16" style="z-index: 5; position:relative">
+      <div class="row gx-0 gy-12 align-items-center">
+        <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600">
+          <h1 class="display-2  mb-5">Zanhouse Designer specializes in <br /><span class="typer text-primary text-nowrap" data-delay="120" data-words="Gypsum decoration, Suspended Ceiling, Partition, Skimming, Painting,  Tiles,  Aluminum,  Kitchen Cabinets"></span><span class="cursor text-primary" data-owner="typer"></span></h1>            
+          <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
+            <span><a href="{% url 'contact' %}" class="btn btn-lg btn-accent rounded-pill me-2">Get Started</a></span>          
+          </div>
+        </div>
+        <!--/column -->
+        <div class="col-lg-5 offset-lg-1">
+          <div class="swiper-container dots-over shadow-lg" data-autoplay="true" data-autoplaytime="5000" data-margin="5" data-nav="true" data-dots="true">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="{% static 'assets/img/decoration/8.png' %}" class="rounded" alt="" /></div>
+                <div class="swiper-slide"><img src="{% static 'assets/img/decoration/3.png' %}" class="rounded" alt="" /></div>
+                <div class="swiper-slide"><img src="{% static 'assets/img/decoration/5.png' %}" class="rounded" alt="" /></div>
+                <div class="swiper-slide"><img src="{% static 'assets/img/decoration/11.png' %}" class="rounded" alt="" /></div>
+                <div class="swiper-slide"><img src="{% static 'assets/img/decoration/9.png' %}" class="rounded" alt="" /></div>
+              </div>
+              <!--/.swiper-wrapper -->
+            </div>
+            <!--/.swiper -->
+          </div>
+          <!-- /.swiper-container -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+
+  <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+      
+      <div class="row">
+        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
+          <h2 class="fs-15 text-uppercase text-primary mb-3">what we do</h2>
+          <h3 class="display-4 mb-10 px-xl-10 px-xxl-15">Our Services</h3>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+      <ul class="nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column">
+        <li class="nav-item"> <a class="nav-link d-flex flex-row active" data-bs-toggle="tab" href="#tab2-1">
+            <div><img src="{% static 'assets/img/icons/lineal/home.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+            <div>
+              <h4 class="mb-1">Gypsum Decoration</h4>
+              <p>Enhance interiors with stylish, durable gypsum designs.</p>
+            </div>
+          </a> </li>
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-2">
+            <div><img src="{% static 'assets/img/icons/lineal/design.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+            <div>
+              <h4 class="mb-1">Suspended Ceiling</h4>
+              <p>Create modern ceilings with functional and elegant designs.</p>
+            </div>
+          </a> </li>
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+            <div><img src="{% static 'assets/img/icons/lineal/menu.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+            <div>
+              <h4 class="mb-1">Partition</h4>
+              <p>Divide spaces seamlessly with customized partitions.</p>
+            </div>
+          </a> </li>
+        
+      </ul>
+      <!-- /.nav-tabs -->
+      <ul class="nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column">
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+          <div><img src="{% static 'assets/img/icons/lineal/paint-roller.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+          <div>
+            <h4 class="mb-1">Painting</h4>
+            <p>Add vibrant life to walls with premium painting services.</p>
+          </div>
+        </a> </li>
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+          <div><img src="{% static 'assets/img/icons/lineal/fullscreen.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+          <div>
+            <h4 class="mb-1">Tiles Installation</h4>
+            <p>Perfectly laid tiles for sleek and durable floors.</p>
+          </div>
+        </a> </li>
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+          <div><img src="{% static 'assets/img/icons/lineal/house.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+          <div>
+            <h4 class="mb-1">Aluminum & Kitchen Cabinets </h4>
+            <p>Craft premium aluminum fittings for modern spaces.</p>
+          </div>
+        </a> </li>
+        
+      </ul>
+      <!-- /.nav-tabs -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+
+
+ 
+
+<section class="wrapper bg-light">
+<div class="container py-14 py-md-16">
+  <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+    <div class="col-lg-6 position-relative order-lg-2">
+      <div class="shape bg-dot primary rellax w-16 h-20" data-rellax-speed="1" style="top: 3rem; left: 5.5rem"></div>
+      <div class="overlap-grid overlap-grid-2">
+        <div class="item">
+          <figure class="rounded shadow"><img src="{% static 'assets/img/project/4.png' %}"  alt=""></figure>
+        </div>
+        <div class="item">
+          <figure class="rounded shadow"><img src="{% static 'assets/img/project/6.png' %}"  alt=""></figure>
+        </div>
+      </div>
+    </div>
+    <!--/column -->
+    <div class="col-lg-6">
+      <img src="{% static 'assets/img/icons/solid/building.svg' %}" class="svg-inject icon-svg icon-svg-md solid mb-4" alt="" />
+      <h2 class="display-4 mb-3">Who Are We?</h2>
+      <p class="lead fs-lg">ZanHouse Designer Zanzibar deal with finishing of house  like Gypsum decoration, suspended ceiling, partition, skimming, painting,  Tiles,  aluminum,  kitchen cabinets.</p>        
+      <div class="row gy-3 gx-xl-8">
+        <div class="col-md-6">
+          <div class="d-flex flex-row">
+            <div>
+              <img src="{% static 'assets/img/icons/solid/target.svg' %}" class="svg-inject icon-svg icon-svg-sm solid me-4" alt="" />
+            </div>
+            <div>
+              <h4 class="mb-1">Our Mission</h4>
+              <p class="mb-0"> To provide top-notch finishing solutions for modern homes.</p>
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+        <div class="col-md-6">
+          <div class="d-flex flex-row">
+            <div>
+              <img src="{% static 'assets/img/icons/solid/lamp.svg' %}" class="svg-inject icon-svg icon-svg-sm solid me-4" alt="" />
+            </div>
+            <div>
+              <h4 class="mb-1">Our Values</h4>
+              <p class="mb-0">To be the leader in elegant house finishing services.</p>
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/column -->
+  </div>
+  <!--/.row -->
+</div>
+<!-- /.container -->
+</section>
+<!-- /section -->
+
+
+ 
+  <section class="wrapper bg-light">
+    <div class="container py-15 py-md-17">
+      <div class="row">
+        <div class="col-lg-11 col-xl-10 mx-auto mb-10">
+          <h2 class="fs-16 text-uppercase text-primary text-center mb-3">Our Projects</h2>
+          <h3 class="display-3 text-center px-lg-5 px-xl-10 px-xxl-16 mb-0">Check out some of our awesome projects with creative ideas and great design.</h3>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+      <div class="grid grid-view projects-masonry">
+        <div class="row gx-md-8 gy-10 gy-md-13 isotope">
+          <div class="project item col-md-6 col-xl-4">
+            <figure class="rounded mb-6"><img src="{% static 'assets/img/project/1.png' %}" alt="" /><a class="item-link" href="{% static 'assets/img/project/full/1.jpeg' %}" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+               
+                <div class="post-category text-ash">Gypsum decoration</div>
+              </div>
+              <!-- /.post-header -->
+            </div>
+            <!-- /.project-details -->
+          </div>
+          <!-- /.item -->
+          <div class="project item col-md-6 col-xl-4">
+            <figure class="rounded mb-6"><img src="{% static 'assets/img/project/2.png' %}"  alt="" /><a class="item-link" href="{% static 'assets/img/project/full/2.jpeg' %}" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+               
+                <div class="post-category text-ash">Gypsum decoration</div>
+              </div>
+              <!-- /.post-header -->
+            </div>
+            <!-- /.project-details -->
+          </div>
+          <!-- /.item -->
+          <div class="project item col-md-6 col-xl-4">
+            <figure class="rounded mb-6"><img src="{% static 'assets/img/project/3.png' %}"  alt="" /><a class="item-link" href="{% static 'assets/img/project/full/3.jpeg' %}" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+                
+                <div class="post-category text-ash">partition</div>
+              </div>
+              <!-- /.post-header -->
+            </div>
+            <!-- /.project-details -->
+          </div>
+          <!-- /.item -->
+          <div class="project item col-md-6 col-xl-4">
+            <figure class="rounded mb-6"><img src="{% static 'assets/img/project/4.png' %}"  alt="" /><a class="item-link" href="{% static 'assets/img/project/full/4.jpeg' %}" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">                
+                <div class="post-category text-ash">kitchen cabinets</div>
+              </div>
+              <!-- /.post-header -->
+            </div>
+            <!-- /.project-details -->
+          </div>
+          <!-- /.item -->
+          <div class="project item col-md-6 col-xl-4">
+            <figure class="rounded mb-6"><img src="{% static 'assets/img/project/5.png' %}" alt="" /><a class="item-link" href="{% static 'assets/img/project/full/5.jpeg' %}" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">
+                
+                <div class="post-category text-ash">painting</div>
+              </div>
+              <!-- /.post-header -->
+            </div>
+            <!-- /.project-details -->
+          </div>
+          <!-- /.item -->
+          <div class="project item col-md-6 col-xl-4">
+            <figure class="rounded mb-6"><img src="{% static 'assets/img/project/6.png' %}"  alt="" /><a class="item-link" href="{% static 'assets/img/project/full/6.jpeg' %}" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+            <div class="project-details d-flex justify-content-center flex-column">
+              <div class="post-header">                 
+                <div class="post-category text-ash">painting</div>
+              </div>
+              <!-- /.post-header -->
+            </div>
+            <!-- /.project-details -->
+          </div>
+          <!-- /.item -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.grid -->
+      <div class="text-center mt-10">
+        
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+
+
+{% endblock content %}
+
+

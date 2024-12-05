@@ -1,0 +1,14 @@
+@font-face {
+	font-family:Unicons;
+	src:url("Unicons.a82067f46a0f.woff2") format("woff2"),url("Unicons.1010b1ef9be8.woff") format("woff");
+	font-weight:400;
+	font-style:normal;
+	font-display:block
+}
+@font-face {
+	font-family:Custom;
+	src:url("../custom/Custom.2e2db9a9fb8e.woff2") format("woff2"),url("../custom/Custom.bbff78c0ff36.woff") format("woff");
+	font-weight:400;
+	font-style:normal;
+	font-display:block
+}

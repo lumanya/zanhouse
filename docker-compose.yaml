@@ -1,0 +1,31 @@
+services:
+  web:
+    image: nathan60/zanhouse:v1.0.0
+    command: python manage.py runserver 0.0.0.0:8000
+    container_name: zanhouse-web
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}
+      - DEBUG=${DEBUG}
+      - HOST=${HOST}
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+    - db
+  db:
+    image: postgres:15
+    container_name: zanhouse_postgres_dbms
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    

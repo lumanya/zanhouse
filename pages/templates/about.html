@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="wrapper bg-soft-primary">
+    <div class="container pt-16 pt-md-18 pb-12 pb-md-18 pb-lg-20">
+     
+      <!-- /.row -->
+      <div class="row mt-10">
+        <div class="col-md-10 col-lg-9 col-xxl-8 mx-auto text-center">
+          <h2 class="fs-17 text-uppercase text-primary mb-3">Zanhouse Designer</h2>
+          <h3 class="display-1 mb-5 px-xl-12">Your Trusted Partner for Interior Finishing</h3>
+          <p class="lead fs-22">We Specializing in Gypsum Decoration, Suspended Ceilings, Partitions, Skimming, and More – Elevating Every Building to Perfection.</p>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <div class="overflow-hidden">
+      <div class="divider text-light mx-n2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 92.26">
+          <path fill="currentColor" d="M1206,21.2c-60-5-119-36.92-291-5C772,51.11,768,48.42,708,43.13c-60-5.68-108-29.92-168-30.22-60,.3-147,27.93-207,28.23-60-.3-122-25.94-182-36.91S30,5.93,0,16.2V92.26H1440v-87l-30,5.29C1348.94,22.29,1266,26.19,1206,21.2Z" />
+        </svg>
+      </div>
+    </div>
+    <!-- /.overflow-hidden -->
+  </section>
+  <!-- /section -->
+
+  <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+      
+      <div class="row">
+        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
+          <h2 class="fs-15 text-uppercase text-primary mb-3">what we do</h2>
+          <h3 class="display-4 mb-10 px-xl-10 px-xxl-15">Our Services</h3>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+      <ul class="nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column">
+        <li class="nav-item"> <a class="nav-link d-flex flex-row active" data-bs-toggle="tab" href="#tab2-1">
+            <div><img src="{% static 'assets/img/icons/lineal/home.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+            <div>
+              <h4 class="mb-1">Gypsum Decoration</h4>
+              <p>Enhance interiors with stylish, durable gypsum designs.</p>
+            </div>
+          </a> </li>
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-2">
+            <div><img src="{% static 'assets/img/icons/lineal/design.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+            <div>
+              <h4 class="mb-1">Suspended Ceiling</h4>
+              <p>Create modern ceilings with functional and elegant designs.</p>
+            </div>
+          </a> </li>
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+            <div><img src="{% static 'assets/img/icons/lineal/menu.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+            <div>
+              <h4 class="mb-1">Partition</h4>
+              <p>Divide spaces seamlessly with customized partitions.</p>
+            </div>
+          </a> </li>
+        
+      </ul>
+      <!-- /.nav-tabs -->
+      <ul class="nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column">
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+          <div><img src="{% static 'assets/img/icons/lineal/paint-roller.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+          <div>
+            <h4 class="mb-1">Painting</h4>
+            <p>Add vibrant life to walls with premium painting services.</p>
+          </div>
+        </a> </li>
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+          <div><img src="{% static 'assets/img/icons/lineal/fullscreen.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+          <div>
+            <h4 class="mb-1">Tiles Installation</h4>
+            <p>Perfectly laid tiles for sleek and durable floors.</p>
+          </div>
+        </a> </li>
+        <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-3">
+          <div><img src="{% static 'assets/img/icons/lineal/house.svg' %}" class="svg-inject icon-svg icon-svg-md text-accent me-4" alt="" /></div>
+          <div>
+            <h4 class="mb-1">Aluminum & Kitchen Cabinets </h4>
+            <p>Craft premium aluminum fittings for modern spaces.</p>
+          </div>
+        </a> </li>
+        
+      </ul>
+      <!-- /.nav-tabs -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+
+
+{% endblock content %}
